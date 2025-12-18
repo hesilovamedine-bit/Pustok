@@ -1,0 +1,289 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\user\\OneDrive\\Desktop\\NewTas\\pustok\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9C1745A9-49D7-4E00-A9FA-12DAA265C53C}|pustok\\pustok.csproj|c:\\users\\user\\onedrive\\desktop\\newtas\\pustok\\pustok\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C1745A9-49D7-4E00-A9FA-12DAA265C53C}|pustok\\pustok.csproj|solutionrelative:pustok\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C1745A9-49D7-4E00-A9FA-12DAA265C53C}|pustok\\pustok.csproj|c:\\users\\user\\onedrive\\desktop\\newtas\\pustok\\pustok\\models\\featured.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C1745A9-49D7-4E00-A9FA-12DAA265C53C}|pustok\\pustok.csproj|solutionrelative:pustok\\models\\featured.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C1745A9-49D7-4E00-A9FA-12DAA265C53C}|pustok\\pustok.csproj|c:\\users\\user\\onedrive\\desktop\\newtas\\pustok\\pustok\\viewmodels\\homevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C1745A9-49D7-4E00-A9FA-12DAA265C53C}|pustok\\pustok.csproj|solutionrelative:pustok\\viewmodels\\homevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C1745A9-49D7-4E00-A9FA-12DAA265C53C}|pustok\\pustok.csproj|c:\\users\\user\\onedrive\\desktop\\newtas\\pustok\\pustok\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9C1745A9-49D7-4E00-A9FA-12DAA265C53C}|pustok\\pustok.csproj|solutionrelative:pustok\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C1745A9-49D7-4E00-A9FA-12DAA265C53C}|pustok\\pustok.csproj|c:\\users\\user\\onedrive\\desktop\\newtas\\pustok\\pustok\\views\\blog\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9C1745A9-49D7-4E00-A9FA-12DAA265C53C}|pustok\\pustok.csproj|solutionrelative:pustok\\views\\blog\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C1745A9-49D7-4E00-A9FA-12DAA265C53C}|pustok\\pustok.csproj|c:\\users\\user\\onedrive\\desktop\\newtas\\pustok\\pustok\\views\\auth\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9C1745A9-49D7-4E00-A9FA-12DAA265C53C}|pustok\\pustok.csproj|solutionrelative:pustok\\views\\auth\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C1745A9-49D7-4E00-A9FA-12DAA265C53C}|pustok\\pustok.csproj|c:\\users\\user\\onedrive\\desktop\\newtas\\pustok\\pustok\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C1745A9-49D7-4E00-A9FA-12DAA265C53C}|pustok\\pustok.csproj|solutionrelative:pustok\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C1745A9-49D7-4E00-A9FA-12DAA265C53C}|pustok\\pustok.csproj|c:\\users\\user\\onedrive\\desktop\\newtas\\pustok\\pustok\\controllers\\shopcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C1745A9-49D7-4E00-A9FA-12DAA265C53C}|pustok\\pustok.csproj|solutionrelative:pustok\\controllers\\shopcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C1745A9-49D7-4E00-A9FA-12DAA265C53C}|pustok\\pustok.csproj|c:\\users\\user\\onedrive\\desktop\\newtas\\pustok\\pustok\\controllers\\blogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C1745A9-49D7-4E00-A9FA-12DAA265C53C}|pustok\\pustok.csproj|solutionrelative:pustok\\controllers\\blogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C1745A9-49D7-4E00-A9FA-12DAA265C53C}|pustok\\pustok.csproj|c:\\users\\user\\onedrive\\desktop\\newtas\\pustok\\pustok\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C1745A9-49D7-4E00-A9FA-12DAA265C53C}|pustok\\pustok.csproj|solutionrelative:pustok\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C1745A9-49D7-4E00-A9FA-12DAA265C53C}|pustok\\pustok.csproj|c:\\users\\user\\onedrive\\desktop\\newtas\\pustok\\pustok\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9C1745A9-49D7-4E00-A9FA-12DAA265C53C}|pustok\\pustok.csproj|solutionrelative:pustok\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C1745A9-49D7-4E00-A9FA-12DAA265C53C}|pustok\\pustok.csproj|c:\\users\\user\\onedrive\\desktop\\newtas\\pustok\\pustok\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9C1745A9-49D7-4E00-A9FA-12DAA265C53C}|pustok\\pustok.csproj|solutionrelative:pustok\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C1745A9-49D7-4E00-A9FA-12DAA265C53C}|pustok\\pustok.csproj|c:\\users\\user\\onedrive\\desktop\\newtas\\pustok\\pustok\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C1745A9-49D7-4E00-A9FA-12DAA265C53C}|pustok\\pustok.csproj|solutionrelative:pustok\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C1745A9-49D7-4E00-A9FA-12DAA265C53C}|pustok\\pustok.csproj|c:\\users\\user\\onedrive\\desktop\\newtas\\pustok\\pustok\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9C1745A9-49D7-4E00-A9FA-12DAA265C53C}|pustok\\pustok.csproj|solutionrelative:pustok\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C1745A9-49D7-4E00-A9FA-12DAA265C53C}|pustok\\pustok.csproj|c:\\users\\user\\onedrive\\desktop\\newtas\\pustok\\pustok\\views\\shop\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9C1745A9-49D7-4E00-A9FA-12DAA265C53C}|pustok\\pustok.csproj|solutionrelative:pustok\\views\\shop\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C1745A9-49D7-4E00-A9FA-12DAA265C53C}|pustok\\pustok.csproj|c:\\users\\user\\onedrive\\desktop\\newtas\\pustok\\pustok\\pustok.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{9C1745A9-49D7-4E00-A9FA-12DAA265C53C}|pustok\\pustok.csproj|solutionrelative:pustok\\pustok.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\NewTas\\pustok\\pustok\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "pustok\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\NewTas\\pustok\\pustok\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "pustok\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAQwEUAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T20:39:50.046Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Featured.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\NewTas\\pustok\\pustok\\Models\\Featured.cs",
+              "RelativeDocumentMoniker": "pustok\\Models\\Featured.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\NewTas\\pustok\\pustok\\Models\\Featured.cs",
+              "RelativeToolTip": "pustok\\Models\\Featured.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T20:57:54.221Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "BlogController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\NewTas\\pustok\\pustok\\Controllers\\BlogController.cs",
+              "RelativeDocumentMoniker": "pustok\\Controllers\\BlogController.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\NewTas\\pustok\\pustok\\Controllers\\BlogController.cs",
+              "RelativeToolTip": "pustok\\Controllers\\BlogController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T20:41:00.329Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\NewTas\\pustok\\pustok\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "pustok\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\NewTas\\pustok\\pustok\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "pustok\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T20:40:12.963Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ShopController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\NewTas\\pustok\\pustok\\Controllers\\ShopController.cs",
+              "RelativeDocumentMoniker": "pustok\\Controllers\\ShopController.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\NewTas\\pustok\\pustok\\Controllers\\ShopController.cs",
+              "RelativeToolTip": "pustok\\Controllers\\ShopController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T20:40:38.357Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HomeVM.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\NewTas\\pustok\\pustok\\ViewModels\\HomeVM.cs",
+              "RelativeDocumentMoniker": "pustok\\ViewModels\\HomeVM.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\NewTas\\pustok\\pustok\\ViewModels\\HomeVM.cs",
+              "RelativeToolTip": "pustok\\ViewModels\\HomeVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T20:54:49.971Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\NewTas\\pustok\\pustok\\Views\\Auth\\Index.cshtml",
+              "RelativeDocumentMoniker": "pustok\\Views\\Auth\\Index.cshtml",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\NewTas\\pustok\\pustok\\Views\\Auth\\Index.cshtml",
+              "RelativeToolTip": "pustok\\Views\\Auth\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADIBAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-17T20:57:24.468Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\NewTas\\pustok\\pustok\\Views\\Blog\\Index.cshtml",
+              "RelativeDocumentMoniker": "pustok\\Views\\Blog\\Index.cshtml",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\NewTas\\pustok\\pustok\\Views\\Blog\\Index.cshtml",
+              "RelativeToolTip": "pustok\\Views\\Blog\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKwBAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-17T20:57:40.039Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\NewTas\\pustok\\pustok\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "pustok\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\NewTas\\pustok\\pustok\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "pustok\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAKkAAAAAAAAAAAAowLgAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-17T20:59:17.872Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\NewTas\\pustok\\pustok\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "pustok\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\NewTas\\pustok\\pustok\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "pustok\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T20:41:22.068Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\NewTas\\pustok\\pustok\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "pustok\\Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\NewTas\\pustok\\pustok\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "pustok\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-17T21:03:50.675Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\NewTas\\pustok\\pustok\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "pustok\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\NewTas\\pustok\\pustok\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "pustok\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHAEAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-17T21:00:37.213Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\NewTas\\pustok\\pustok\\Program.cs",
+              "RelativeDocumentMoniker": "pustok\\Program.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\NewTas\\pustok\\pustok\\Program.cs",
+              "RelativeToolTip": "pustok\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T21:06:37.118Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\NewTas\\pustok\\pustok\\Views\\Shop\\Index.cshtml",
+              "RelativeDocumentMoniker": "pustok\\Views\\Shop\\Index.cshtml",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\NewTas\\pustok\\pustok\\Views\\Shop\\Index.cshtml",
+              "RelativeToolTip": "pustok\\Views\\Shop\\Index.cshtml",
+              "ViewState": "AgIAACkCAAAAAAAAAAAUwFACAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-17T20:59:57.437Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\NewTas\\pustok\\pustok\\Views\\Product\\Index.cshtml",
+              "RelativeDocumentMoniker": "pustok\\Views\\Product\\Index.cshtml",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\NewTas\\pustok\\pustok\\Views\\Product\\Index.cshtml",
+              "RelativeToolTip": "pustok\\Views\\Product\\Index.cshtml",
+              "ViewState": "AgIAADIDAAAAAAAAAAAUwFkDAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-17T20:59:39.282Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "pustok.csproj",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\NewTas\\pustok\\pustok\\pustok.csproj",
+              "RelativeDocumentMoniker": "pustok\\pustok.csproj",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\NewTas\\pustok\\pustok\\pustok.csproj",
+              "RelativeToolTip": "pustok\\pustok.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-12-17T19:10:06.013Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
