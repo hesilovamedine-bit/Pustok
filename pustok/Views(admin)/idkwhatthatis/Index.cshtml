@@ -1,0 +1,36 @@
+﻿@* @using pustok.Models
+@using pustok.Models.MVC_Pustokkk.Models
+@model List<Category>
+@{
+    Layout = "_AdminLayout";
+}
+
+<h1>Categories</h1>
+
+<a asp-action="Create" class="btn btn-primary mb-3">Add Category</a>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+
+    <body>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.Name</td>
+                <td>
+                    <a asp-action="Update" asp-route-id="@item.Id" class="btn btn-warning">Update</a>
+                    <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-info">Details</a>
+                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger"
+                       onclick="return confirm('Are you sure?')">Delete</a>
+                </td>
+            </tr>
+        }
+    </body>
+</table> *@

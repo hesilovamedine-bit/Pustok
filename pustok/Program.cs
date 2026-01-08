@@ -1,14 +1,43 @@
-var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddControllersWithViews();
+using Microsoft.EntityFrameworkCore;
+using pustok.DAL;
 
-var app = builder.Build();
+namespace pustok
+{
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
 
-app.UseStaticFiles();
+            var builder = WebApplication.CreateBuilder(args);
 
-app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=Home}/{action=Index}"
-);
+            builder.Services.AddControllersWithViews();
+            builder.Services.AddDbContext<AppDbContext>(options =>
+            {
+                options.UseSqlServer(builder.Configuration.GetConnectionString("Default"));
+            });
 
-app.Run();
+
+
+
+
+            var app = builder.Build();
+
+            app.UseStaticFiles();
+
+            app.MapControllerRoute(
+                       name: "areas",
+                       pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}"
+                     );
+
+            app.MapControllerRoute(
+                name: "default",
+                pattern: "{controller=Home}/{action=Index}/{id?}"
+            );
+
+            app.Run();
+        }
+
+
+    }
+}
