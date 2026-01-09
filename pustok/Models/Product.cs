@@ -1,9 +1,11 @@
-﻿using pustok.Areas.Admin.ViewModels;
+﻿using pustok.Models.Base;
+using pustok.Models;
 using pustok.Models.Base;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace pustok.Models
 {
-    public class Featured : BaseEntity
+    public class Product : BaseEntity
     {
         public int Id { get; set; }
         public string Author { get; set; }
@@ -13,6 +15,9 @@ namespace pustok.Models
         public decimal PriceOld { get; set; }
         public decimal PriceDiscount { get; set; }
         public int CategoryId { get; set; }
+        public Category Category { get; set; }
+        [NotMapped]
+        public IFormFile Photo { get; set; }
 
     }
 }

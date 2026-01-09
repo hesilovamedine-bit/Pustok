@@ -148,7 +148,7 @@ Home Slider Tab
                 <li class="nav-item">
                     <a class="nav-link active" id="shop-tab" data-toggle="tab" href="#shop" role="tab"
                        aria-controls="shop" aria-selected="true">
-                        Featured Products
+                        Product Products
                     </a>
                     <span class="arrow-icon"></span>
                 </li>
@@ -183,23 +183,23 @@ Home Slider Tab
                             {"breakpoint":320, "settings": {"slidesToShow": 1} }
                         ]'>
                         <div class="single-slide">
-                            @foreach (Featured featured in Model.Featureds)
+                            @foreach (Product Product in Model.Products)
                             {
                                 <div class="product-card">
                                     <div class="product-header">
                                         <a href="" class="author">
-                                            @featured.Author
+                                            @Product.Author
                                         </a>
                                         <h3>
                                             <a href="product-details.html">
-                                                @featured.Details
+                                                @Product.Details
                                                 MD510LL/A
                                             </a>
                                         </h3>
                                     </div>
                                     <div class="product-card--body">
                                         <div class="card-image">
-                                            <img src="~/assets/image/products/@featured.Image" alt="">
+                                            <img src="~/assets/image/products/@Product.Image" alt="">
                                             <div class="hover-contents">
                                                 <a href="product-details.html" class="hover-image">
                                                     <img src="~/assets/image/products/product-1.jpg" alt="">
@@ -222,9 +222,9 @@ Home Slider Tab
                                             </div>
                                         </div>
                                         <div class="price-block">
-                                            <span class="price">£@featured.Price</span>
-                                            <del class="price-old">@featured.PriceOld</del>
-                                            <span class="price-discount">@featured.PriceDiscount%</span>
+                                            <span class="price">£@Product.Price</span>
+                                            <del class="price-old">@Product.PriceOld</del>
+                                            <span class="price-discount">@Product.PriceDiscount%</span>
                                         </div>
                                     </div>
                                 </div>

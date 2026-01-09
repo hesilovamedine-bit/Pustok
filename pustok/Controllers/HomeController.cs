@@ -1,75 +1,35 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using pustok.ViewModels;
-using pustok.Controllers;
+using Microsoft.EntityFrameworkCore;
+using pustok.DAL;
 using pustok.Models;
+using pustok.ViewModels;
+using pustok.DAL;
+using pustok.ViewModels;
 
 namespace pustok.Controllers
 {
     public class HomeController : Controller
     {
-        public IActionResult Index()
-        {
+        private readonly ILogger<HomeController> _logger;
+        private readonly AppDbContext _context;
 
-            List<Featured> Feature = new List<Featured>();
-            {
-                new Featured()
-                {
-                    Id = 1,
-                    Author = "Apple",
-                    Details = "Lorem ipsun dolar",
-                    Image = "product-1.jpg",
-                    Price = 500,
-                    PriceOld = 800,
-                    PriceDiscount = 30
-                };
-                new Featured()
-                {
-                    Id = 2,
-                    Author = "wpple",
-                    Details = "Lorem ipsun dolar",
-                    Image = "product-2.jpg",
-                    Price = 500,
-                    PriceOld = 800,
-                    PriceDiscount = 30
-                };
-                new Featured()
-                {
-                    Id = 3,
-                    Author = "epple",
-                    Details = "Lorem ipsun dolar",
-                    Image = "product-3.jpg",
-                    Price = 500,
-                    PriceOld = 800,
-                    PriceDiscount = 30
-                };
-                new Featured()
-                {
-                    Id = 4,
-                    Author = "tpple",
-                    Details = "Lorem ipsun dolar",
-                    Image = "product-4.jpg",
-                    Price = 500,
-                    PriceOld = 800,
-                    PriceDiscount = 30
-                };
-                new Featured()
-                {
-                    Id = 5,
-                    Author = "ypple",
-                    Details = "Lorem ipsun dolar",
-                    Image = "product-5.jpg",
-                    Price = 500,
-                    PriceOld = 800,
-                    PriceDiscount = 30
-                };
-                
-            }
+
+        public HomeController(
+            ILogger<HomeController> logger,
+            AppDbContext context)
+        {
+            _logger = logger;
+            _context = context;
+        }
+
+        public async Task<IActionResult> Index()
+        {
             HomeVM vm = new HomeVM()
             {
-                Featureds = Feature
+                Products = await _context.Products.ToListAsync()
             };
             return View(vm);
-
         }
+
     }
 }

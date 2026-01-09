@@ -5,7 +5,7 @@ namespace pustok.ViewModels
 {
     public class HomeVM
     {
-        public List<Featured> Featureds { get; set; }
+        public List<Product>? Products { get; set; }
 
     }
 }

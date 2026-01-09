@@ -1,7 +1,10 @@
-﻿using pustok.DAL;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using pustok.Models.pustok.Models;
+using pustok.Areas.Admin.ViewModels;
+using pustok.DAL;
+using pustok.Models;
+using NuGet.ContentModel;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace pustok.Areas.Admin.Controllers
 {
@@ -17,14 +20,14 @@ namespace pustok.Areas.Admin.Controllers
 
         public async Task<IActionResult> Index()
         {
+            var categories = await _context.Categories.ToListAsync();
+            var vms = categories.Select(c => new CategoryVM
+            {
+                Id = c.Id,
+                Name = c.Name,
+            }).ToList();
 
-
-            return View(await _context.Categories.ToListAsync());
-        }
-        public IActionResult Test()
-        {
-            string result = Guid.NewGuid().ToString();
-            return Content(result);
+            return View(vms);
         }
 
         [HttpGet]
@@ -34,121 +37,117 @@ namespace pustok.Areas.Admin.Controllers
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(Category category)
         {
-            //if (!ModelState.IsValid)
-            //{
-            //    return View();
-            //}
+            if (!ModelState.IsValid)
+                return View(category);
 
-            //bool result = await _context.Categories.AnyAsync(p => p.Name == category.Name);
-            //if (result)
-            //{
-            //    ModelState.AddModelError("Name", "Bu name sistemde var");
-            //    return View();
-            //}
+            bool exists = await _context.Categories.AnyAsync(c => c.Name == category.Name);
+            if (exists)
+            {
+                ModelState.AddModelError("Name", "Bu category artıq mövcuddur");
+                return View(category);
+            }
 
-            //if (!category.Photo.ContentType.Contains("image/"))
-            //{
-            //    ModelState.AddModelError("Photo", "Siz uygun formatda file elave etmirsiz.");
-            //    return View();
-            //}
+            if (category.Photo == null)
+            {
+                ModelState.AddModelError("Photo", "Şəkil seçilməlidir");
+                return View(category);
+            }
 
-            //if (category.Photo.Length > 2 * 1024 * 1024)
-            //{
-            //    ModelState.AddModelError("Photo", "Siz duzgun hecmde file elave etmirsiz.");
-            //    return View();
-            //}
+            if (!category.Photo.ContentType.Contains("image/"))
+            {
+                ModelState.AddModelError("Photo", "Yalnız şəkil faylı yükləyə bilərsiniz");
+                return View(category);
+            }
 
-            //string fileName = String.Concat(Guid.NewGuid().ToString(), category.Photo.FileName);
-            //string path = "C:\\Users\\USER\\source\\tasklar\\classtask\\classtask\\wwwroot\\assets\\image\\" + fileName;
-            //FileStream fileStream = new(path, FileMode.Create);
-            //await category.Photo.CopyToAsync(fileStream);
-            //fileStream.Close();
-            //category.Image = fileName;
+            if (category.Photo.Length > 2 * 1024 * 1024)
+            {
+                ModelState.AddModelError("Photo", "Şəkil maksimum 2MB ola bilər");
+                return View(category);
+            }
 
+            string folder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/assets/images/products");
+            if (!Directory.Exists(folder))
+            {
+                Directory.CreateDirectory(folder);
+            }
 
-            await _context.AddAsync(category);
+            string fileName = Guid.NewGuid().ToString() + "_" + category.Photo.FileName;
+            string path = Path.Combine(folder, fileName);
+
+            using var fs = new FileStream(path, FileMode.Create);
+            await category.Photo.CopyToAsync(fs);
+
+            category.Image = fileName;
+
+            await _context.Categories.AddAsync(category);
             await _context.SaveChangesAsync();
-            return RedirectToAction("Index");
 
+            return RedirectToAction("Index");
         }
 
+        [HttpGet]
         public async Task<IActionResult> Update(int? id)
         {
             if (id == null || id < 1)
-            {
                 return BadRequest();
-            }
 
-            Category category = await _context.Categories.FirstOrDefaultAsync(c => c.Id == id);
-
-
+            var category = await _context.Categories.FindAsync(id);
             if (category == null)
-            {
                 return NotFound();
-            }
+
             return View(category);
         }
 
-
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Update(int? id, Category category)
         {
             if (id == null || id < 1)
-            {
                 return BadRequest();
-            }
 
-            Category exists = await _context.Categories.FirstOrDefaultAsync(c => c.Id == id);
-
-
+            var exists = await _context.Categories.FindAsync(id);
             if (exists == null)
-            {
                 return NotFound();
-            }
 
             if (!ModelState.IsValid)
-            {
-                return View();
-            }
+                return View(category);
 
-            bool result = await _context.Categories.AnyAsync(c => c.Name == category.Name);
-            if (result)
+            bool nameExists = await _context.Categories.AnyAsync(c => c.Name == category.Name && c.Id != id);
+            if (nameExists)
             {
-                ModelState.AddModelError("Name", "Bu category var artiq");
-                return View();
+                ModelState.AddModelError("Name", "Bu category artiq movcuddur");
+                return View(category);
             }
 
             exists.Name = category.Name;
+            if (category.Photo != null)
+            {
+                string fileName = Guid.NewGuid().ToString() + category.Photo.FileName;
+                string path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/assets/images/products", fileName);
+                using var fs = new FileStream(path, FileMode.Create);
+                await category.Photo.CopyToAsync(fs);
+                exists.Image = fileName;
+            }
+
             await _context.SaveChangesAsync();
             return RedirectToAction("Index");
-
         }
 
-        public async Task<IActionResult> Delete(int? id)
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Delete(int id)
         {
-            if (id == null || id < 1)
-            {
-                return BadRequest();
-            }
-            Category category = await _context.Categories.FirstOrDefaultAsync(p => p.Id == id);
-
-
+            var category = await _context.Categories.FindAsync(id);
             if (category == null)
-            {
                 return NotFound();
-            }
 
             if (!category.IsDeleted)
-            {
                 category.IsDeleted = true;
-            }
             else
-            {
                 _context.Categories.Remove(category);
-            }
-
 
             await _context.SaveChangesAsync();
             return RedirectToAction("Index");
@@ -157,17 +156,19 @@ namespace pustok.Areas.Admin.Controllers
         public async Task<IActionResult> Detail(int? id)
         {
             if (id == null || id < 1)
-            {
                 return BadRequest();
-            }
-            Category category = await _context.Categories.FirstOrDefaultAsync(p => p.Id == id);
 
+            var category = await _context.Categories.FindAsync(id);
             if (category == null)
-            {
                 return NotFound();
-            }
-            return View(category);
-        }
 
+            var categoryVM = new CategoryVM
+            {
+                Id = category.Id,
+                Name = category.Name,
+            };
+
+            return View(categoryVM);
+        }
     }
 }

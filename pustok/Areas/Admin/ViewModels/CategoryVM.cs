@@ -1,4 +1,4 @@
-﻿
+﻿using pustok.Areas.Admin.ViewModels;
 
 namespace pustok.Areas.Admin.ViewModels
 {
@@ -6,6 +6,7 @@ namespace pustok.Areas.Admin.ViewModels
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public List<FeaturedVM> Featureds { get; set; } = new List<FeaturedVM>();
+        public List<ProductVM> Products { get; set; } = new List<ProductVM>();
+
     }
 }

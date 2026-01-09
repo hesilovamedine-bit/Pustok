@@ -3,7 +3,7 @@
 namespace pustok.Areas.Admin.Controllers
 {
     [Area("Admin")]
-    public class DashBoardController : Controller
+    public class HomeController : Controller
     {
         public IActionResult Index()
         {

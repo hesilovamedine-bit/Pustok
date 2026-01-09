@@ -1,23 +1,21 @@
-﻿@using pustok.Models
-@using pustok.Models.pustok.Models
+﻿@using pustok.Areas.Admin.ViewModels
+@model CategoryVM
 
-@model Category
-
-
-
-
-
-<div class="card" style="width: 18rem;">
-    <div class="card-body">
-        <h5 class="card-title">@Model.Name </h5>
-        <h6 class="card-subtitle mb-2 text-body-secondary">Detail</h6>
-
-
-
-
-
-        <a asp-controller="category" asp-action="index" class="btn btn-success">Category</a>
-    </div>
+<div>
+	<h3>@Model.Name</h3>
+	<p>@Model.Id</p>
 </div>
 
+@foreach (ProductVM Product in Model.Products)
+{
+	<div>
+		<h3>@Product.Author</h3>
+		<p>@Product.Details</p>
+		<p>@Product.Image</p>
+		<p>@Product.Price</p>
+		<p>@Product.PriceOld</p>
+		<p>@Product.PriceDiscount</p>
+		<p>@Product.Photo</p>
+	</div>
+}
 
